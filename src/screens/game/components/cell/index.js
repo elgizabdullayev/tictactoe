@@ -1,10 +1,9 @@
 import React, { useMemo } from 'react';
 import { getStyles } from './styles';
-import { View } from 'react-native';
+import { View, Pressable } from 'react-native';
 import { Rectangle } from '../../../../assets/svg/rectangle';
 import { Cross } from '../../../../assets/svg/cross';
 import { CircleForm as Circle } from '../../../../assets/svg/circle';
-
 
 const figures = {
     EMPTY: null,
@@ -12,17 +11,17 @@ const figures = {
     CIRCLE: <Circle/>
 }
 
-export const Cell = () => {
+export const Cell = ({onPress, number, figure}) => {
     const styles =  getStyles();
     
     return(
-        <View style={styles.container}>
+        <Pressable style={styles.container} onPress={() => onPress(number)}>
             <View style={styles.stepFigure}>
                 <Rectangle/>
             </View>
             <View style={styles.stepFigure}>
-                {figures['CIRCLE']}
+                {figures[figure]}
             </View>
-        </View>
+        </Pressable>
     )
 };
