@@ -12,8 +12,8 @@ export const getStyles = () => StyleSheet.create({
     },
     row: {
         flexDirection: 'row',
-        marginVertical: calculatedSize(50),
-        paddingHorizontal: calculatedSize(45)
+        marginHorizontal: calculatedSize(40),
+        marginVertical: calculatedSize(35)
     },
     result: {
         height: calculatedSize(60),
