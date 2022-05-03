@@ -1,5 +1,6 @@
 import React from 'react';
 import Svg, { Rect } from "react-native-svg";
+import { Colors } from '../colors';
 
 export const Rectangle = ({fill}) => (
   <Svg
@@ -14,7 +15,7 @@ export const Rectangle = ({fill}) => (
       height={83.513}
       rx={27.216}
       fill={fill ? fill : "none"}
-      stroke="#fff"
+      stroke={Colors.WHITE}
       strokeWidth={5.568}
     />
   </Svg>

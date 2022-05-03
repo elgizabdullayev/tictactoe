@@ -15,9 +15,6 @@ export const Menu = () => {
             <Pressable style={styles.menuButtons} onPress={onPressStart}>
                 <Text style={styles.menuTextStart}>Start</Text>
             </Pressable>
-            <Pressable style={styles.menuButtons}>
-                <Text style={styles.menuTextQuit}>Quit</Text>
-            </Pressable>
         </View>
     )
 };

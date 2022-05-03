@@ -4,10 +4,9 @@ export const getStyles = () => StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     stepFigure: {
         position: 'absolute',
-        zIndex: 2 
     }
 })

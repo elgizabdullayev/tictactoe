@@ -19,9 +19,4 @@ export const getStyles = () => StyleSheet.create({
         color: Colors.WHITE,
         marginBottom: 25
     },
-    menuTextQuit: {
-        fontFamily: Fonts.MAIN_FONT_SEMIBOLD,
-        fontSize: calculatedSize(24),
-        color: Colors.WHITE
-    }
 })
