@@ -40,8 +40,8 @@ export const Game = () => {
                     squares[pattern[0]] === squares[pattern[1]] &&
                     squares[pattern[1]] === squares[pattern[2]]
                 ){
-                    setWinningPattern(pattern)
-                    setWinner(squares[pattern[1]])
+                    setWinningPattern(pattern);
+                    setWinner(squares[pattern[1]]);
                 }
             })
         }
@@ -54,10 +54,10 @@ export const Game = () => {
         let squares = [...cells];
         if(turn === 'CROSS') {
             squares[number] = 'CROSS'
-            setTurn('CIRCLE')
+            setTurn('CIRCLE');
         } else {
             squares[number] = 'CIRCLE'
-            setTurn('CROSS')
+            setTurn('CROSS');
         }
         checkForWinner(squares);
         setCells(squares);

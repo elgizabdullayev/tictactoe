@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import React, { useMemo } from 'react';
+import React from 'react';
 import { View, Pressable, Text } from 'react-native';
 import { getStyles } from './styles';
 
@@ -7,8 +7,9 @@ export const Menu = () => {
     const styles =  getStyles();
     const navigation = useNavigation();
     const onPressStart = () => {
-        navigation.navigate('Game')
-    }
+        navigation.navigate('Game');
+    };
+
     return(
         <View style={styles.container}>
             <Pressable style={styles.menuButtons} onPress={onPressStart}>
