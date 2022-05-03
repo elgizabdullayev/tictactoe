@@ -1,12 +1,11 @@
 import React from 'react';
 import Svg, { Rect } from "react-native-svg";
 
-export const Rectangle = (props) => (
+export const Rectangle = ({fill}) => (
   <Svg
     width={90}
     height={90}
     fill="none"
-    {...props}
   >
     <Rect
       x={2.784}
@@ -14,7 +13,7 @@ export const Rectangle = (props) => (
       width={83.513}
       height={83.513}
       rx={27.216}
-      fill="none"
+      fill={fill ? fill : "none"}
       stroke="#fff"
       strokeWidth={5.568}
     />
