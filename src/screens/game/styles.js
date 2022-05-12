@@ -1,46 +1,47 @@
-import { StyleSheet } from "react-native";
-import {Colors} from "../../assets/colors"
-import { Fonts } from "../../assets/fonts";
-import { calculatedSize } from "../../utils/calculatedSize";
+import {StyleSheet} from 'react-native';
+import {Colors} from '../../assets/colors';
+import {Fonts} from '../../assets/fonts';
+import {calculatedSize} from '../../utils/calculatedSize';
 
-export const getStyles = () => StyleSheet.create({
+export const getStyles = () =>
+  StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: Colors.ROSE,
-        alignItems: 'center',
-        justifyContent: 'center'
+      flex: 1,
+      backgroundColor: Colors.ROSE,
+      alignItems: 'center',
+      justifyContent: 'center',
     },
     row: {
-        flexDirection: 'row',
-        marginHorizontal: calculatedSize(40),
-        marginVertical: calculatedSize(35)
+      flexDirection: 'row',
+      marginHorizontal: calculatedSize(40),
+      marginVertical: calculatedSize(35),
     },
     result: {
-        height: calculatedSize(60),
-        width: '100%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: Colors.ROSE,
-        alignSelf: 'flex-start'
+      height: calculatedSize(60),
+      width: '100%',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: Colors.ROSE,
+      alignSelf: 'flex-start',
     },
     restartGameText: {
-        color: Colors.WHITE,
-        fontFamily: Fonts.MAIN_FONT_SEMIBOLD,
-        fontSize: calculatedSize(20)
+      color: Colors.WHITE,
+      fontFamily: Fonts.MAIN_FONT_SEMIBOLD,
+      fontSize: calculatedSize(20),
     },
     winnerText: {
-        marginTop: 15,
-        color: Colors.WHITE,
-        fontFamily: Fonts.MAIN_FONT_SEMIBOLD,
-        marginBottom: 15,
-        fontSize: calculatedSize(20)
+      marginTop: 15,
+      color: Colors.WHITE,
+      fontFamily: Fonts.MAIN_FONT_SEMIBOLD,
+      marginBottom: 15,
+      fontSize: calculatedSize(20),
     },
     restartButton: {
-        height: calculatedSize(40),
-        padding: 5,
-        borderWidth: 2,
-        borderColor: Colors.WHITE,
-        marginBottom: calculatedSize(40),
-        borderRadius: 8
-    }
-})
+      height: calculatedSize(40),
+      padding: 5,
+      borderWidth: 2,
+      borderColor: Colors.WHITE,
+      marginBottom: calculatedSize(40),
+      borderRadius: 8,
+    },
+  });
